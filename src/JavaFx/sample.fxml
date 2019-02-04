@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" styleClass="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFx.Account">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="600.0" layoutX="-6.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@abstract-white-background-vector-illustration_1407-419.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="270.0" layoutY="468.0" mnemonicParsing="false" onAction="#button" prefHeight="35.0" prefWidth="118.0" text="Sign up" />
+      <Label fx:id="textLabel" layoutX="205.0" layoutY="25.0" prefHeight="35.0" prefWidth="191.0" text="Sign Up Form">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <AnchorPane>
+         <children>
+            <AnchorPane prefHeight="396.0" prefWidth="582.0">
+               <children>
+                  <ImageView fitHeight="396.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@grey.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>      <TextField fx:id="userid" layoutX="169.0" layoutY="325.0" prefHeight="46.0" prefWidth="333.0" promptText="email id" />
+      <PasswordField fx:id="userPassword" layoutX="173.0" layoutY="403.0" prefHeight="46.0" prefWidth="327.0" promptText="password" />
+      <DatePicker fx:id="dob" layoutX="170.0" layoutY="252.0" prefHeight="46.0" prefWidth="333.0" />
+      <TextField fx:id="address" layoutX="169.0" layoutY="181.0" prefHeight="46.0" prefWidth="333.0" promptText="address" />
+      <TextField fx:id="userName" layoutX="169.0" layoutY="109.0" prefHeight="46.0" prefWidth="333.0" promptText="name" />
+      <Label layoutX="83.0" layoutY="115.0" prefHeight="35.0" prefWidth="69.0" text="Full Name :" />
+      <Label layoutX="77.0" layoutY="187.0" prefHeight="35.0" prefWidth="81.0" text="Address:" />
+      <Label layoutX="71.0" layoutY="258.0" prefHeight="35.0" prefWidth="81.0" text="Date of Birth:" />
+      <Label layoutX="83.0" layoutY="331.0" prefHeight="35.0" prefWidth="69.0" text="User Id:" />
+      <Label layoutX="83.0" layoutY="405.0" prefHeight="35.0" prefWidth="69.0" text="Password" />
+      <Label layoutX="169.0" layoutY="378.0" prefHeight="17.0" prefWidth="375.0" text="*password should be more than 8 characters and must contain two non-alphabetic">
+         <font>
+            <Font size="9.0" />
+         </font></Label>
+      <Label fx:id="satisfy" layoutX="201.0" layoutY="449.0" prefHeight="17.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>

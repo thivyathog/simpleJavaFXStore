@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-border-color: #DAA520; -fx-background-color: #DAA520; -fx-border-radius: 13px 13px 13px 13px;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFx.Account">
+    <stylesheets>
+        <URL value="@fx.css" />
+      <URL value="@fx.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="496.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fish2.jpg" />
+         </image>
+      </ImageView>
+
+       <TextField fx:id="userName" layoutX="41.0" layoutY="235.0" prefHeight="46.0" prefWidth="226.0" promptText="Email ID">
+         <effect>
+            <ColorAdjust brightness="-0.17" contrast="-0.17" hue="-0.38" saturation="-0.17" />
+         </effect></TextField>
+       <Button layoutX="115.0" layoutY="412.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="92.0" text="Login" />
+       <Label fx:id="isConnected" layoutX="46.0" layoutY="338.0" prefHeight="20.0" prefWidth="216.0" textFill="#f8f6f6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+       <PasswordField fx:id="userPassword" layoutX="41.0" layoutY="299.0" prefHeight="46.0" prefWidth="226.0" promptText="Password">
+         <effect>
+            <ColorAdjust brightness="-0.17" contrast="-0.17" hue="-0.38" saturation="-0.17" />
+         </effect></PasswordField>
+      <Label layoutX="46.0" layoutY="363.0" prefHeight="30.0" prefWidth="216.0" text="Not a member yet?" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect></Label>
+      <Button id="button" layoutX="179.0" layoutY="366.0" mnemonicParsing="false" onAction="#changescreen" style="-fx-background-insets: 0,1,2,3,0;" text="Sign up">
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="1.23" specularConstant="0.0" specularExponent="0.0" surfaceScale="0.0">
+               <light>
+                  <Light.Distant color="#0df2ff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+   </children>
+</AnchorPane>

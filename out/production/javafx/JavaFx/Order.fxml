@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="414.0" prefWidth="1283.0" styleClass="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFx.Cart">
+<children>
+      <AnchorPane layoutX="615.0">
+         <children>
+            <ImageView fitHeight="410.0" fitWidth="578.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@abstract-white-background-vector-illustration_1407-419.jpg" />
+               </image>
+            </ImageView>
+          <ImageView fitHeight="144.0" fitWidth="180.0" layoutX="464.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@reel.jpeg" />
+              </image>
+          </ImageView>
+          <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="464.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@Sinkers.jpeg" />
+              </image>
+          </ImageView>
+          <Label layoutX="531.0" layoutY="385.0" text="Sinkers" />
+
+            
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="419.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@grey.jpg" />
+         </image>
+      </ImageView>
+    <TextField fx:id="pSize" layoutX="237.0" layoutY="137.0" onMousePressed="#setSize" onTouchPressed="#setSize" />
+    <TextField fx:id="pQuantity" layoutX="237.0" layoutY="175.0" />
+    <Label layoutX="44.0" layoutY="96.0" prefHeight="25.0" prefWidth="105.0" text="Product name:" />
+    <Label layoutX="44.0" layoutY="175.0" prefHeight="25.0" prefWidth="105.0" text="Product Quantity:" />
+    <Label layoutX="44.0" layoutY="137.0" prefHeight="25.0" prefWidth="105.0" text="Product Size:" />
+    <Button layoutX="462.0" layoutY="97.0" mnemonicParsing="false" onAction="#cart" text="Add to Cart" />
+    <Label layoutX="149.0" layoutY="33.0" prefHeight="39.0" prefWidth="179.0" text="Product Order">
+        <font>
+            <Font size="27.0" />
+        </font>
+    </Label>
+
+    <Hyperlink layoutX="14.0" layoutY="382.0" onAction="#openModify" text="Want to Modify Account details?" />
+      <Button layoutX="468.0" layoutY="131.0" mnemonicParsing="false" onAction="#price_sort" text="View Cart" />
+      <TextArea fx:id="txtArea" layoutX="135.0" layoutY="231.0" prefHeight="122.0" prefWidth="353.0" />
+      <Hyperlink layoutX="535.0" layoutY="383.0" onAction="#screen1" text="Log Out" />
+      <Button layoutX="462.0" layoutY="355.0" mnemonicParsing="false" onAction="#searchPrice" text="Search" />
+      <TextField fx:id="search" layoutX="297.0" layoutY="355.0" />
+      <Label layoutX="7.0" layoutY="355.0" prefHeight="25.0" prefWidth="323.0" text="Search Cart if the product is added by using the price " />
+      <ComboBox fx:id="productName" layoutX="238.0" layoutY="97.0" prefWidth="150.0" />
+      <Button layoutX="470.0" layoutY="163.0" mnemonicParsing="false" onAction="#removeCart" text="Remove " />
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="657.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@hooks.jpeg" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="888.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@Rod.jpg" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="144.0" fitWidth="160.0" layoutX="652.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@line.jpeg" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="144.0" fitWidth="160.0" layoutX="891.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@swivels.jpeg" />
+        </image>
+    </ImageView>
+    <Label layoutX="695.0" layoutY="211.0" text="Fishing Hooks" />
+    <Label layoutX="701.0" layoutY="385.0" text="Fishing Line" />
+    <Label layoutX="932.0" layoutY="205.0" text="Fishing Rod" />
+    <Label layoutX="1152.0" layoutY="203.0" text="Fishing Reel" />
+    <Label layoutX="944.0" layoutY="394.0" text="Swivels" />
+      <Button layoutX="540.0" layoutY="355.0" mnemonicParsing="false" onAction="#invoice" text="Check out" />
+      <Button layoutX="453.0" layoutY="193.0" mnemonicParsing="false" onAction="#open" text="Payment Method" />
+</children>
+
+</AnchorPane>

@@ -1,0 +1,29 @@
+													Jeff's Fishing Shack 
+
+
+													Tax Invoice
+
+Jeff's Fishing Shack 
+ Trading as:Octopus Ptv Ltd 
+ Shop 4,Hillarys Boat Harbour 
+ Hillarys,WA,6025 
+
+T:08 9402 2222
+E:Sales@JFS.com.au
+
+
+Receipt#:																 Date:2018-07-31
+Customer:Thivya
+hsf2222h
+
+Customer#:
+Customer email:tvia2014@hotmail.com
+
+Purchases
+No.	Desc. 	Code 	Size 	Cost 	Qty 	Amount
+
+1:Fishing Hooks	FH	#6	4.0	20.0	80.0
+
+2:Fishing Reel	FR	M	6.0	25.0	150.0
+
+Total Paid: 230.0

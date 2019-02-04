@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFx.Cart">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@grey.jpg" />
+         </image></ImageView>
+      <Label layoutX="106.0" layoutY="45.0" text="ENQUIRY">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="enquiry" layoutX="22.0" layoutY="130.0" prefHeight="200.0" prefWidth="555.0" />
+      <Button layoutX="474.0" layoutY="351.0" mnemonicParsing="false" text="Submit" onAction="#enqu" />
+   </children>
+</AnchorPane>
